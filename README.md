@@ -36,7 +36,7 @@ Proyek ini merupakan implementasi sistem deteksi isyarat tangan secara real-time
    git clone https://github.com/username/nama-repo.git
    cd nama-repo
 
-2.  **Instalasi Library **
-    pip install opencv-python roboflow
+2.  **Instalasi Library**
+    ```pip install opencv-python roboflow
 
 MIT License © 2025 — [Kelompok 1 TUBES PSI D3TT 4701]
