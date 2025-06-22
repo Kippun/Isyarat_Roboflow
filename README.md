@@ -37,6 +37,25 @@ Proyek ini merupakan implementasi sistem deteksi isyarat tangan secara real-time
    cd nama-repo
 
 2.  **Instalasi Library**
-    ```pip install opencv-python roboflow
+    ```bash
+    pip install opencv-python roboflow
+    pip uninstall opencv-python-headless -y  //jika sebelumnya menggunakan opencv yang berbasis non GUI
+    pip install opencv-python
+
+3.  **Ganti API Key**
+    -Buka https://app.roboflow.com
+    -Masuk ke akun kamu
+    -Klik ikon profil (pojok kanan atas) → "Your API Key"
+    -Salin API key kamu
+    -Ganti baris ini di main.py:
+    ```bash
+    rf = Roboflow(api_key="GANTI_DENGAN_API_KEY_KAMU")
+
+4.  **Mengganti Workspace dan Project**
+    ```bash
+    project = rf.workspace("nama-workspace").project("nama-project")
+    model = project.version(VERSI).model
+
+
 
 MIT License © 2025 — [Kelompok 1 TUBES PSI D3TT 4701]
