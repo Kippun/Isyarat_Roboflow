@@ -56,6 +56,4 @@ Proyek ini merupakan implementasi sistem deteksi isyarat tangan secara real-time
     project = rf.workspace("nama-workspace").project("nama-project")
     model = project.version(VERSI).model
 
-
-
 MIT License © 2025 — [Kelompok 1 TUBES PSI D3TT 4701]
